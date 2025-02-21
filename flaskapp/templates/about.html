@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About</title>
+        <meta name="description" content="My about page, on which I tell you about me!">
+        <meta name="keywords" content="about page">
+    <style>
+    .myDiv {
+    border: solid darkred 5px;
+    padding-bottom: 20px;
+    background-color: pink;
+    text-align: center;
+    font-family: Sans-serif;
+    }
+    </style>
+    </head>
+    <body>
+    <div class = "myDiv">
+        {% if heading %}
+            <h1>{{heading}}</h1>
+        {% else %}
+            <h1>About Page</h1>
+        {% endif %}
+            This is where I tell you about me.
+    </div>
+    </body>
+</html>

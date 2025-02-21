@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="description" content="My home page, on which I showcase my work!">
+        <meta name="keywords" content="personal home page">
+    <style>
+    .myDiv {
+    border: solid darkblue 5px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+    text-align: center;
+    font-family: Sans-serif;
+    }
+    </style>
+    </head>
+    <body>
+    <div class = "myDiv">
+        {% if heading %}
+            <h1>{{heading}}</h1>
+        {% else %}
+            <h1>Home Page</h1>
+        {% endif %}
+            This is where you will put the content of this page.
+    </div>
+    </body>
+</html>
