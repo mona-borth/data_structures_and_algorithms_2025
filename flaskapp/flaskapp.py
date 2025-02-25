@@ -17,7 +17,7 @@ def hello(city=None):
     
 @app.route("/about")
 def about():
-    return render_template('about.html', heading = 'My About Page')
+    return render_template('about.html', heading = 'About Mona')
 
 if __name__ == '__main__':
     app.run(debug=True)
